@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Mukta:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 1320px;
+            height:600px;
+            margin-left:250px;
+            margin-right:200px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background:linear-gradient(to bottom ,black, transparent),url(banner.png);
+           
+        }
+
+        .text-container{
+            padding-left: 250px;
+            padding-top:75px ;
+            display: block;
+            text-align: center;
+            justify-content: center;
+            /*text-align: center;*/
+            color: white;
+            font-family: 'Merriweather', serif;
+            font-family: 'Mukta', sans-serif;
+            padding-bottom:0px;
+            border-bottom: 0px;
+            max-width: 60%;
+            word-spacing: 0px;
+            
+        }
+        .title{
+            font-family: sans-serif;
+            font-size: 30px;
+            transform: translateY(43px);
+            font-weight: lighter;
+        }
+        .des{
+            font-size:70px;
+            font-weight: bolder;
+        }
+        .off{
+            display: block;
+            text-align: center;
+            margin-bottom: 75px;
+            
+
+        }
+        .percent{
+            color: red;
+            font-size: 60px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom: 0px;
+            font-family: 'Merriweather', serif;
+            font-family: 'Mukta', sans-serif;
+            
+        }
+        .hol{
+            font-family: 'Merriweather', serif;
+            font-family: 'Mukta', sans-serif;
+            font-weight: lighter;
+            color: red;
+            font-size: 18px;
+        }
+        .category{
+            font-family: 'Merriweather', serif;
+            font-family: 'Mukta', sans-serif;
+            font-size: 30px;
+        }
+
+        .party{
+            margin-left: 250px;
+            background:linear-gradient(to right ,black, transparent),url(Vectorrr.png);
+            width: 1320px;
+            height: 600px;
+            border-radius: 15px;
+        }
+        .text{       
+            display: block;
+            
+        }
+        .party{
+            display: flex;
+            margin-bottom: 100px;
+        }
+        .welcome{
+            padding-left:100px ;
+            padding-top: 50px;
+            color: white;
+            font-family: sans-serif;   
+            font-size: 85px;  
+            font-weight: bolder;
+            max-width: 75%;   
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            border-bottom: 0px;
+        }
+        .welcome-des{
+            padding-top: 0px;
+            border-top:0px ;
+            margin-top: 0px;
+            padding-left:100px ;
+            padding-top: 50px;
+            color:#FFF;
+            font-family: monospace;   
+            font-size: 15px;  
+            font-weight: 200;
+            max-width: 95%; 
+            transform: translateY(-30px);
+        }
+        .btn{
+            transform: translateY(-20px);
+            margin-left: 100px;
+            padding: 10px;
+            border: 0px;
+            background-color: black;
+            font-weight: 500;
+            color: white;
+            font-family: sans-serif;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        .pic{
+            padding-top: 100px;
+            padding-right: 150px;
+
+        }
+        .info{
+            margin-left: 250px;
+            background:linear-gradient(to bottom , lightpink,transparent);
+            text-align: center;
+            max-width: 1320px;
+            max-height: 600px;
+        }
+        main{
+            justify-content: center;
+           
+        }
+        span{
+            color: red;
+            font-family: sans-serif;
+        }
+        .information{
+            font-family: sans-serif;
+            font-size: 25px;
+            font-weight: light;
+        }
+        .info{
+            padding-top:75px;
+            padding-bottom:75px;
+            border-radius: 20px;
+            font-weight: lighter;
+        }
+        .btn2{
+            margin-top: 50px;
+            padding:15px;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+            font-family: sans-serif;
+            font-size: 25px;
+            border: 0px;
+        }
+        .int{
+            margin-left: 250px;
+            align-items: center;
+            width: 1320px;
+            height: 600px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .round-image{
+            transform: translateX(-85px);
+            border-radius: 50%;
+            padding: 10px;
+            border: 15px solid red;
+        }
+        .offer-des{
+            max-width: 70%;
+            font-family: sans-serif;
+            color: rgb(110, 105, 105);
+        }
+        .t2024 h1{
+            font-size: 30px;
+        }
+        .t2024{
+            margin-left: 120px;
+            color: rgb(110, 105, 105);
+            font-family: sans-serif;
+            margin-top: 50px;
+            
+        }
+        .offer-title{
+            font-family: sans-serif;
+            font-size: 20px;
+            color: red;
+        }
+        .offer-time{
+            font-family: sans-serif;
+            font-size: 45px;
+        }
+        .t2024 h1{
+            color: red;
+            
+     
+        }
+        .offer p{
+            
+            transform: translateY(20px);
+            
+        }
+        .func{
+            margin-left: 250px;
+            text-align: center;
+            height: 600px;
+            width: 1320px;
+            display: block;
+            font-family: sans-serif;
+            align-items: center;
+            margin-bottom: 0px;
+            border-bottom: 0px;
+            padding-bottom: 0px;
+        }
+        .func-title h1{
+            transform: translateY(-15px);
+            font-size: 40px;
+        }
+        .func-des{
+            margin-bottom: 50px;
+            color: rgb(110, 105, 105);
+        }
+        .paglami{
+            transform: translateY(-400px);
+            margin-left: 250px;
+            background-image: url(redrect.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            width: 1320px;
+            height: 662px;
+        }
+        .shop{
+            text-align: right;
+        }
+        .intro{
+            font-size: 12px;
+        }
+        .dis{
+            transform: translateY(-350px);
+            margin-right: 275px;
+            text-align: right;
+        }
+        .box{
+            text-align: left;
+            transform: translateY(-700px);
+        }
+        .portfolio{
+            transform: translateY(-200px);
+            margin-left: 250px;
+            text-align: left;
+            font-family: sans-serif;
+        }
+        .portfolio-title{
+            transform: translateY(-15px);
+            font-size: 65px;
+        }
+        .portfolio-des{
+            max-width: 75%;
+            margin-bottom: 50px;
+            color: rgb(110, 105, 105);
+        }
+        .picture{
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .letter{
+            width: 1320px;
+            height: 616px;
+            margin-left: 250px;
+            width: 1320px;
+            border-radius: 20px;
+            background-color: rgb(253, 231, 234);
+            text-align: center;
+        }
+        .input{
+        margin-left: 450px;
+        padding-left:30px ;
+        padding-right:30px ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius:50px 0px 0px 50px ;
+        border: 0px;
+        }
+        .form{
+            display: flex;
+            margin-left: 30px;
+            font-family: 20px;
+        }
+        .bat{
+            color: white;
+            font-family: sans-serif;
+            font-family: 25px;
+            border: 0px;
+            padding-left:50px ;
+            padding-right:30px ;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 0px 50px 50px 0px;
+            background: #F00;
+            flex-shrink: 0;
+        }
+        .chat{
+            transition:1s background ease-in,500ms,ease-out 1s;
+        }
+        .chat:hover{
+            transform: rotate(360deg);
+            box-shadow: 10px 10px 10px violet;
+            text-shadow: 3px red;
+            /* transform: translateY(-25px);*/
+        }
+
+        /*
+        .boka{
+            display:flex;
+            justify-content: space-between;
+            padding: 100px;
+        }
+        */
+
+        .let-img1{
+            margin-top: 100px;
+        }
+        .letter{
+            font-family: sans-serif;     
+         }
+         .let-title{
+            font-size: 35px;
+         }
+         .let-des{
+            margin-top: 50px;
+            margin-left: 125px;
+            font-size: 15px;
+            max-width: 80%;
+            color:rgb(110, 105, 105);
+         }
+        .let-text{
+            text-align: center;
+        }
+        .footer{
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            width: 1600px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            color: white;
+            background-color: #070211;
+            margin-top: 75px;
+            margin-left: 129px;
+            
+        }
+        .footer-text{
+
+            font-family: sans-serif;
+            font-size: 16px;
+            color: white;
+        }
+        .con-web{
+            display: block;
+            
+        }
+        .impo{
+            display: flex;
+        }
+        .impo2{
+            transform: translateY(-20px);
+        }
+        .call{
+            transform: translateX(-200px);
+        }
+        .num{
+            transform: translate(-180px,-20px);
+        }
+        .footer-web{
+            transform: translate(-200px);
+        }
+        .web-loc{
+            transform: translate(-160px,-45px);
+        }
+        .gap{
+            transform: translateY(12px);
+        }
+        .footer2{
+            margin: 0 auto;
+            width: 1600px;
+            background-color: #070211;
+            color: white;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .footer3{
+            justify-content: space-around;
+            display: flex;
+            margin: 0 auto;
+            width: 1600px;
+            background-color: #070211;
+            color: white;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="text-container">
+            <h2 class="title">Happy New Year</h2>
+            <h1 class="des">&nbsp;New Year Party Celebration</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="off">
+            <div>
+                <h1 class="percent">65% OFF</h1>
+                <h3 class="hol">OUT HOLIDAY DEALS ARE BETTER</h3>
+                <h2 class="category">ALL CATEGORIES</h2>
+            </div>
+            <img src="newyear.png" alt="">
+        </div>
+        <div class="party">
+            <div class="text">
+                <h1 class="welcome">Welcome to Midnight Party</h1>
+                <p class="welcome-des">Step into Midnight Party's realm, pulsing with beats and dazzling lights. As the clock chimes midnight, embrace a world of rhythm and celebration, where each beat ignites a dance-filled heartbeat.</p>
+                <button class="btn">JOIN NOW</button>
+            </div>
+            <div class="pic">
+                <img src="2024.png" alt="">
+            </div>
+        </div>
+
+        <div class="info">
+            <h2 class="information"><span>Place:</span> New Park Hotel</h2>
+            <h2 class="information"><span>Date:</span> 31 december night 2023</h2>
+            <h2 class="information"><span>Time:</span> Evening 7:30 pm to 12:30 am</h2>
+            <button class="btn2">Join Now</button>
+        </div>
+        <section class="int">
+        <div class="offer">
+            <h2 class="offer-title">NEW BEST OFFER</h2>
+            <h1 class="offer-time">Coming Soon</h1>
+            <p class="offer-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quasi rrupti deserunt consectetur laborum. Corrupti, exercitationem nam voluptates aperiam ipsam eos consectetur explicabo blanditiis.</p>
+        </div>
+
+        <div class="round-img">
+            <img class="round-image" src="ellipse.png" alt="">
+        </div>
+
+        <div class="t2024">
+            <h1>2024</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium </p>
+            <img src="new.png" alt="">
+        </div>
+        </section>
+
+        <section class="func">
+            <div class="intro">
+                <h2>WHAT IS FUNCTIONAL</h2>
+            </div>
+            <div class="func-title">
+                <h1><span>HOLIDAY</span> Sale 50%</h1>
+            </div>
+            <div class="func-des">
+                <p>Indulge in the festive spirit with our Holiday Sale extravaganza. Unwrap incredible deals and discounts that spark joy and make your celebrations brighter. From thoughtful gifts to must-have items, discover a plethora of options to enhance your holiday experience. Hurry, as these exclusive offers are here for a limited time only. 'Tis the season to shop and save, creating unforgettable memories without breaking the bank!</p>
+            </div>
+        </section>
+        
+        <section class="paglami">
+            <div class="shop">
+            <img class="shop-1" src="shopping.png" alt="">
+            </div>
+            <div class="dis">
+            <img class="dis-1" src="discount.png" alt="">
+            </div>
+            <div class="box">
+            <img class="box-1" src="box.png" alt="">          
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="text-sec">
+                <h2 class="gift">OUR BEST GIFTS</h2>
+                <h1 class="portfolio-title">Our Awesome Portfolio</h1>
+                <p class="portfolio-des"> Passionate and detail-oriented professional with a diverse skill set in marketing, content creation, and project management. Proven ability to drive results through strategic planning and execution. Committed to delivering impactful solutions and fostering collaborative relationships for success.</p>
+            </div>
+            <div class="picture">
+                <img class="chat" src="a.png" alt="">
+                <img class="chat" src="b.png" alt="">
+                <img class="chat" src="c.png" alt="">
+                <img class="chat" src="d.png" alt="">
+                <img class="chat" src="e.png" alt="">
+                <img class="chat" src="f.png" alt="">
+            
+            </div>
+        </section>
+
+        <section class="letter">
+            <div class="let-img">
+                <img class="let-img1" src="email.png" alt="">
+            </div>
+            <div class="let-text">
+                <h1 class="let-title">Subscribe Newsletter</h1>
+                <p class="let-des">Subscribe for exclusive updates, offers, and insights. Join our vibrant community, where you'll receive personalized content and stay connected with the latest news, events, and special promotions. Don't miss out!</p>
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text" name="name" placeholder="username@gmail.com" class="input" id="">
+                    <button class="bat" type="submit" name="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-text">
+                <h3>44, Big Building Roosevelt Street <br> <div class="gap">Beach Gardens Florida 33410</div></h3>
+            </div>
+            
+            <div class="con-web">
+                <div class="impo">
+                    <img class="call" height="24" width="25" src="Call.png" alt=""> <h4 class="num">+123 455 678</h4>
+                </div>
+                <div class="impo">
+                    <div class="impo2">
+                        <img class="footer-web" height="24" width="25" src="Website.png" alt=""> <h4 class="web-loc">www.website.com</h4>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+        </section>
+        <section class="footer2">
+            <div class="icons">
+                <img src="Facebook.png" alt="">
+                <img src="Twitter.png" alt="">
+                <img src="Linkedin.png" alt="">
+                <img src="Instagram.png" alt="">
+            </div>
+            <br>
+        </section>
+        <section class="footer3">
+            <div class="copy">
+                <h4>2024,All Rights Reserved.</h4>              
+            </div>
+            <div class="subs">
+                <h4>Unsubscribe</h4>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!--<div class="footer-content">
+            <div class="social-icons">
+                <img src="Facebook.png" alt="">
+                <img src="Twitter.png" alt="">
+                <img src="Instagram.png" alt="">
+            </div>
+            <hr>
+            <p> some text some text</p>
+
+        </div>-->
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+header{
+    background-image: url(banner.png);
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 100px;
+    display: block;
+}
+.header-title{
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+}
+.header-des{
+    color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+    max-width: 75%;
+}
